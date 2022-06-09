@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gnupg &#8212; Киевское направление</title>
+	<atom:link href="https://baludok.com/wordpress/tag/gnupg/feed" rel="self" type="application/rss+xml" />
+	<link>https://baludok.com/wordpress</link>
+	<description>Сайт о путешествиях и разных вылазках.</description>
+	<lastBuildDate>Wed, 07 Mar 2007 22:19:00 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>GnuPG &#8212; краткая инструкция</title>
+		<link>https://baludok.com/wordpress/gnupg-kratkaya-instrukcziya</link>
+					<comments>https://baludok.com/wordpress/gnupg-kratkaya-instrukcziya#respond</comments>
+		
+		<dc:creator><![CDATA[rpne]]></dc:creator>
+		<pubDate>Wed, 07 Mar 2007 22:19:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[gnu]]></category>
+		<category><![CDATA[gnupg]]></category>
+		<category><![CDATA[разное]]></category>
+		<guid isPermaLink="false">https://baludok.com/wordpress/gnupg-%d0%ba%d1%80%d0%b0%d1%82%d0%ba%d0%b0%d1%8f-%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%86%d0%b8%d1%8f</guid>
+
+					<description><![CDATA[1. Создаём ключи приватный и публичный gpg --full-generate-key Тут всё просто без определенных примудростей, вам только перед данной операцией нужно придумать фразу-пароль и запомнить. Создаются ключи и сертификат отзыва. Я себе выбрал (1) RSA и RSA (по умолчанию) , 4096 бит и срок действия 2 года. 2. Убедимся что ключи создались gpg --list-keys gpg --list-secret-keys… <span class="read-more"><a href="https://baludok.com/wordpress/gnupg-kratkaya-instrukcziya">Читать далее &#187;</a></span>]]></description>
+										<content:encoded><![CDATA[<p><em>1. Создаём ключи приватный и публичный <strong><code>gpg --full-generate-key</code></strong></em><br />
+Тут всё просто без определенных примудростей, вам только перед данной операцией нужно придумать фразу-пароль и запомнить. Создаются ключи и сертификат отзыва. Я себе выбрал (1) RSA и RSA (по умолчанию) , 4096 бит и срок действия 2 года.</p>
+<p><em>2. Убедимся что ключи создались<br />
+<strong><code>gpg --list-keys<br />
+gpg --list-secret-keys<br />
+gpg --list-public-keys</code></strong></em><br />
+Данная комманада просто выводит список созданных и импортированных ключей.</p>
+<p><em>3. Делаем экспорт публичного ключа в текстовый файл <strong><code>gpg --output vlad@konnov.name.asc --armor --export 1CD291E8DEC729F1</code></strong></em><br />
+1CD291E8DEC729F1 &#8212; Это идентификатор вашего публичного ключа, который принадлежит вашему приватному ключу.</p>
+<p><em>4. Делаем экспорт приватного ключа <strong><code>gpg --armor --output vlad@konnov.name.key --export-secret-keys 1CD291E8DEC729F1</code></strong></em><br />
+Приватный и публичные ключи нужно сохранить в надежном месте. Для возможности их использования на другой машине, после переустановки ОС и т.д. Позаботиться о конфиденциальности и защищенности данных файлов нужно прямо сейчас!</p>
+<p><em>5. Отправляем публичный ключ на открытые сервера ключей. <strong><code>gpg --send-keys --keyserver pgp.mit.edu 1CD291E8DEC729F1</code></strong></em><br />
+Делать подобную операцию не обязательно и доверять таким серверам нельзя. Перед импортом публичного ключа, нужно обязательно убедиться что ключ его. В дальнейшем ты поймешь как.</p>
+<p><em>7. Для восстановления ключей используем следующую команду:<br />
+<strong><code>gpg --import vlad@konnov.name.asc<br />
+gpg --import vlad@konnov.name.key</code></strong></em><br />
+Делать прямо сейчас не нужно, только когда будет в этом необходимость.</p>
+<p><em>8. Уникальный опечаток своего и любого другого импортированного вами публичного ключа всегда можно проверить командой <strong><code>gpg --fingerprint vlad@konnov.name</code></strong></em><br />
+Получаем такой опечаток моего публичного ключа <code>B0FB 989E C12C 3573 8087  09B2 1CD2 91E8 DEC7 29F1</code></p>
+<p><em>9. Так же нам нужно сделать сертификат отзыва ключа. <strong><code>gpg --gen-revoke --armor --output=revocation.crt vlad@konnov.name</code></strong></em><br />
+На случай если ваш приватный ключ будет скомпроментирован, т.е. доступ к приватному ключу получили третьи лица.</p>
+<p><em>10. На случай если ваш приватный ключ действительно скомпроментировали:<br />
+<strong><code>gpg --import revocation.crt<br />
+gpg --keyserver pgp.mit.edu --send-keys 1CD291E8DEC729F1</code></strong></em><br />
+Использовать только в случае, если в дальнейшем пользоваться данным ключем не намерянны.</p>
+<p><em>11. Проверяем доступность своего или чужого публичного ключа. <strong><code>gpg --keyserver pgp.mit.edu --search-keys vlad@konnov.name</code></strong></em><br />
+После проверки вы интуитивно поймете как импортировать чужой или свой публичный ключ себе в систему, для дальнейшей переписки или обменом зашифрованными файлами. Кроме email можно указать fingerprint илил id ключа.</p>
+<p>Если ты, мой друг, сделал gpg шифрование, принимай мои искренние поздравления! За твоей личной перепиской и обменом файлом теперь не сможет следить АНБ, ФСБ, PRISM, Google и прочий ZOG.</p>
+<p>Ты всегда можешь написать мне зашифрованное письмо, даже если не уверен что с первого раза все получилось, я обязательно сообщу.<br />
+vlad@konnov.name<br />
+<code>B0FB 989E C12C 3573 8087  09B2 1CD2 91E8 DEC7 29F1</code></p>
+<p>UPD<br />
+<code> mkdir -p ~/.gnupg/private-keys-v1.d # chmod 700 ~/.gnupg/private-keys-v1.d </code><br />
+Рабочие решения.<br />
+<code>gpg --keyserver keyserver.ubuntu.com --search-keys vlad@konnov.name<br />
+gpg --keyserver pgp.mit.edu --search-keys vlad@konnov.name<br />
+gpg --keyserver zimmermann.mayfirst.org --search-keys vlad@konnov.name</code></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://baludok.com/wordpress/gnupg-kratkaya-instrukcziya/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
