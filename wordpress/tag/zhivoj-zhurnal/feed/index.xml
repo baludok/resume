@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>живой журнал &#8212; Киевское направление</title>
+	<atom:link href="https://baludok.com/wordpress/tag/zhivoj-zhurnal/feed" rel="self" type="application/rss+xml" />
+	<link>https://baludok.com/wordpress</link>
+	<description>Сайт о путешествиях и разных вылазках.</description>
+	<lastBuildDate>Tue, 29 Dec 2020 11:06:00 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>Почему я продолжаю оставаться в Живом Журнале</title>
+		<link>https://baludok.com/wordpress/pochemu-ya-prodolzhayu-ostavatsya-v-zhivom</link>
+					<comments>https://baludok.com/wordpress/pochemu-ya-prodolzhayu-ostavatsya-v-zhivom#respond</comments>
+		
+		<dc:creator><![CDATA[rpne]]></dc:creator>
+		<pubDate>Tue, 29 Dec 2020 11:06:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[живой журнал]]></category>
+		<category><![CDATA[разное]]></category>
+		<guid isPermaLink="false">https://baludok.com/wordpress/%d0%bf%d0%be%d1%87%d0%b5%d0%bc%d1%83-%d1%8f-%d0%bf%d1%80%d0%be%d0%b4%d0%be%d0%bb%d0%b6%d0%b0%d1%8e-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b0%d1%82%d1%8c%d1%81%d1%8f-%d0%b2-%d0%b6%d0%b8%d0%b2%d0%be%d0%bc</guid>
+
+					<description><![CDATA[Корпорации зла типа Facebook, Twitter, вКонтакте, Youtube и тому подобные сжигатели времени, увели с Живого Журнала многих авторов и читателей на свои площадки, где эксплуатируют их в своих корыстных целях. Полезной информации там нет, а если и появляется информация &#8212; цензура моментально эту информацию удаляет для просмотра. Живой Журнал спасает ситуацию, я могу тут свободно… <span class="read-more"><a href="https://baludok.com/wordpress/pochemu-ya-prodolzhayu-ostavatsya-v-zhivom">Читать далее &#187;</a></span>]]></description>
+										<content:encoded><![CDATA[<p>Корпорации зла типа Facebook, Twitter, вКонтакте, Youtube и тому подобные сжигатели времени, увели с Живого Журнала многих авторов и читателей на свои площадки, где эксплуатируют их в своих корыстных целях. Полезной информации там нет, а если и появляется информация &#8212; цензура моментально эту информацию удаляет для просмотра. Живой Журнал спасает ситуацию, я могу тут свободно излагать свои мысли не переживая, что какой-нибудь модератор-задрот забанит мою запись. Если Живой Журнал начнет подобным заниматься &#8212; в этот же день арендую VPS и переезжаю со всем контентом туда, запасной аэродром всегда должен быть подготовлен. Можно прямо сейчас переехать на WordPress c VPS, но не хочу, не всегда у меня есть желание следить и что-то писать в этот блог. На Живом Журнале заплатил раз в год за &quot;парковку&quot; доменного имени и забыл, не нужно ничего обновлять или исправлять какие-нибудь технические ошибки.</p>
+<p><img src='https://l-files.livejournal.net/new_year_infographics_2020/konnov.name/?1609239929' style="max-width: 100%" /></p>
+<p>Мы дожили до того времени, когда небольшой магазин или предприятие, в первую очередь открывают не официальный сайт, а страничку в Instagram. Сказал бы мне кто-нибудь такое пять лет назад.</p>
+<p>Огромный плюс Живого Журнала &#8212; он может спокойно отображать информацию с выключенным JavaScript, надеюсь так и будет всегда.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://baludok.com/wordpress/pochemu-ya-prodolzhayu-ostavatsya-v-zhivom/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

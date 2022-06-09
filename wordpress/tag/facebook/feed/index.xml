@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>facebook &#8212; Киевское направление</title>
+	<atom:link href="https://baludok.com/wordpress/tag/facebook/feed" rel="self" type="application/rss+xml" />
+	<link>https://baludok.com/wordpress</link>
+	<description>Сайт о путешествиях и разных вылазках.</description>
+	<lastBuildDate>Wed, 07 Mar 2007 07:02:00 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>Для чего Facebook собирает номера телефонов?</title>
+		<link>https://baludok.com/wordpress/dlya-chego-facebook-sobiraet-nomera-telefonov</link>
+					<comments>https://baludok.com/wordpress/dlya-chego-facebook-sobiraet-nomera-telefonov#respond</comments>
+		
+		<dc:creator><![CDATA[rpne]]></dc:creator>
+		<pubDate>Wed, 07 Mar 2007 07:02:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[разное]]></category>
+		<guid isPermaLink="false">https://baludok.com/wordpress/%d0%b4%d0%bb%d1%8f-%d1%87%d0%b5%d0%b3%d0%be-facebook-%d1%81%d0%be%d0%b1%d0%b8%d1%80%d0%b0%d0%b5%d1%82-%d0%bd%d0%be%d0%bc%d0%b5%d1%80%d0%b0-%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%be%d0%b2</guid>
+
+					<description><![CDATA[Facebook меня постоянно терроризирует пытаясь узнать мой номер сотового телефона. Для чего ему мой номер телефона? Вроде бы я не настолько важная персона, чтобы просить у меня номер. И в тоже время, не совсем понятно, для чего facebook показывает моих друзей, которые уже добавили свой номер телефона. По принципу &#34;Все побежали и я побежал&#34;? Рано… <span class="read-more"><a href="https://baludok.com/wordpress/dlya-chego-facebook-sobiraet-nomera-telefonov">Читать далее &#187;</a></span>]]></description>
+										<content:encoded><![CDATA[<p>Facebook меня постоянно терроризирует пытаясь узнать мой номер сотового телефона. Для чего ему мой номер телефона? Вроде бы я не настолько важная персона, чтобы просить у меня номер.<br />
+<img alt='40817_original-5779689' alt="facebook номер телефона" src='https://baludok.com/wordpress/wp-content/uploads/2007/03/40817_original-5779689.png' /></p>
+<p>И в тоже время, не совсем понятно, для чего facebook показывает моих друзей, которые уже добавили свой номер телефона. По принципу &quot;Все побежали и я побежал&quot;?<br />
+Рано или поздно facebook заставит меня привязать номер телефона, с этим ни кто не спорит, но что он будет делать с этими номерами?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://baludok.com/wordpress/dlya-chego-facebook-sobiraet-nomera-telefonov/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

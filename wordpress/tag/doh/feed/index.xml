@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>doh &#8212; Киевское направление</title>
+	<atom:link href="https://baludok.com/wordpress/tag/doh/feed" rel="self" type="application/rss+xml" />
+	<link>https://baludok.com/wordpress</link>
+	<description>Сайт о путешествиях и разных вылазках.</description>
+	<lastBuildDate>Sat, 28 Nov 2020 12:26:00 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>Настройка DNS over HTTPS (DoH) и DNSSEC в OpenWrt на маршрутизаторе Strong 1200 и Encrypted SNI</title>
+		<link>https://baludok.com/wordpress/nastrojka-dns-over-https-doh-i-dnssec-v-openwrt-na-marshrutizator</link>
+					<comments>https://baludok.com/wordpress/nastrojka-dns-over-https-doh-i-dnssec-v-openwrt-na-marshrutizator#respond</comments>
+		
+		<dc:creator><![CDATA[rpne]]></dc:creator>
+		<pubDate>Sat, 28 Nov 2020 12:26:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[dnssec]]></category>
+		<category><![CDATA[doh]]></category>
+		<category><![CDATA[encrypted sni]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[openwrt]]></category>
+		<guid isPermaLink="false">https://baludok.com/wordpress/%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-dns-over-https-doh-%d0%b8-dnssec-%d0%b2-openwrt-%d0%bd%d0%b0-%d0%bc%d0%b0%d1%80%d1%88%d1%80%d1%83%d1%82%d0%b8%d0%b7%d0%b0%d1%82%d0%be%d1%80</guid>
+
+					<description><![CDATA[Устанавливаем OpenWrt на маршрутизатор Strong 1200. Если вы не знаете как установить OpenWrt или не понимаете для чего это нужно делать, данная статья вам будет абсолютно не интересна. Заходим на сайт Experience Security Check и наблюдаем такую картину. Как видим, DNSSEC и Encrypted SNI в данный момент при установках по-умолчанию не активны. Для активации DNSSEC… <span class="read-more"><a href="https://baludok.com/wordpress/nastrojka-dns-over-https-doh-i-dnssec-v-openwrt-na-marshrutizator">Читать далее &#187;</a></span>]]></description>
+										<content:encoded><![CDATA[<p>Устанавливаем OpenWrt на маршрутизатор <a href="https://www.strong.tv/ua/products/broad-router/router1200">Strong 1200</a>. Если вы не знаете как установить OpenWrt или не понимаете для чего это нужно делать, данная статья вам будет абсолютно не интересна.</p>
+<p>Заходим на сайт <a href="https://www.cloudflare.com/ssl/encrypted-sni/">Experience Security Check</a> и наблюдаем такую картину.<br />
+<img alt='700675_original-3164070' src='https://baludok.com/wordpress/wp-content/uploads/2020/11/700675_original-3164070.png' alt="cloudflare check"><br />
+Как видим, DNSSEC и Encrypted SNI в данный момент при установках по-умолчанию не активны.</p>
+<p>Для активации DNSSEC в OpenWrt устанавливаем пакет <a href="https://openwrt.org/docs/guide-user/services/dns/doh_dnsmasq_https-dns-proxy#dns_over_https_with_dnsmasq_and_https-dns-proxy">DNS over HTTPS</a>.<br />
+# Устанавливаем пакет<br />
+<i>opkg update</i><br />
+<i>opkg install dnsmasq https-dns-proxy</i><br />
+# Тестируем<br />
+<i>nslookup openwrt.org localhost</i><br />
+# Перезагружаем установленные пакеты<br />
+<i>/etc/init.d/log restart; /etc/init.d/dnsmasq restart; /etc/init.d/https-dns-proxy restart</i><br />
+# Логи и статус<br />
+<i>logread -e dnsmasq; netstat -l -n -p | grep -e dnsmasq</i><br />
+<i>logread -e https-dns; netstat -l -n -p | grep -e https-dns</i><br />
+# Runtime configuration<br />
+<i>pgrep -f -a dnsmasq; pgrep -f -a https-dns</i><br />
+# Постоянная конфигурация<br />
+<i>uci show dhcp; uci show https-dns-proxy</i><br />
+Теперь все устройства, подключенные через данный маршрутизатор, отправляют DNS запросы в Google DNS и Cloudflare DNS.<br />
+<img alt='701124_original-8414253' src='https://baludok.com/wordpress/wp-content/uploads/2020/11/701124_original-8414253.png' alt="Cloudflare ESNI Checker"></p>
+<p>Encrypted SNI на браузере Mozilla Firefox активируется очень просто. В адресной строке Firefox набираем <i>about:config</i> , в появившемся окне набираем <i>network.security.esni.enabled</i> &#8212; меняем значение на true. Encrypted SNI нужно активировать на каждом браузере отдельно.<br />
+И смотрим результат.<br />
+<img alt='701393_original-5185740' src='https://baludok.com/wordpress/wp-content/uploads/2020/11/701393_original-5185740.png' alt="Encrypted SNI"></p>
+<p>Теперь как минимум ваш провайдер не сможет отслеживать какие сайты вы посещаете. Гаранитии нет, но ваша приватность улучшится. Вы должны отдавать себе отчет что <b>DNS запросы идут через Google и Сloudflare</b>. Тут уже просто нужно соизмерять что лучше именно для вас.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://baludok.com/wordpress/nastrojka-dns-over-https-doh-i-dnssec-v-openwrt-na-marshrutizator/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

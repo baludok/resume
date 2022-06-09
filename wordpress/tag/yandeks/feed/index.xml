@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Яндекс &#8212; Киевское направление</title>
+	<atom:link href="https://baludok.com/wordpress/tag/yandeks/feed" rel="self" type="application/rss+xml" />
+	<link>https://baludok.com/wordpress</link>
+	<description>Сайт о путешествиях и разных вылазках.</description>
+	<lastBuildDate>Wed, 07 Mar 2007 06:55:00 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>Яндекс предупредил о JavaScript</title>
+		<link>https://baludok.com/wordpress/yandeks-predupredil-o-javascript</link>
+					<comments>https://baludok.com/wordpress/yandeks-predupredil-o-javascript#respond</comments>
+		
+		<dc:creator><![CDATA[rpne]]></dc:creator>
+		<pubDate>Wed, 07 Mar 2007 06:55:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[разное]]></category>
+		<category><![CDATA[Яндекс]]></category>
+		<guid isPermaLink="false">https://baludok.com/wordpress/%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81-%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d0%bf%d1%80%d0%b5%d0%b4%d0%b8%d0%bb-%d0%be-javascript</guid>
+
+					<description><![CDATA[Удивительно, но Яндекс предупреждает насколько опасно посещать сайты с включенным JavaScript. Совет. JavaScript является потенциально уязвимым компонентом браузера и может быть использован злоумышленниками, например, для хищения паролей пользователей или запуска вируса. Если вам необходимо посетить сайт, которому вы не доверяете и по каким-то причинам не можете воспользоваться его безопасной копией — отключите поддержку JavaScript на… <span class="read-more"><a href="https://baludok.com/wordpress/yandeks-predupredil-o-javascript">Читать далее &#187;</a></span>]]></description>
+										<content:encoded><![CDATA[<p>Удивительно, но Яндекс предупреждает насколько опасно посещать сайты с включенным JavaScript.</p>
+<blockquote><p>Совет. <strong>JavaScript является потенциально уязвимым компонентом браузера</strong> и может быть использован злоумышленниками, например, для хищения паролей пользователей или запуска вируса. Если вам необходимо посетить сайт, которому вы не доверяете и по каким-то причинам не можете воспользоваться его безопасной копией — отключите поддержку JavaScript на время просмотра сайта. </p></blockquote>
+<p>archive.is/x473p</p>
+<p>Теперь с сегодняшнего дня у меня точно везде отключен JavaScript. Сложно будет без YouTube, но если он не уважает конфиденциальность своих пользователей и случайных прохожих, то обходим стороною.</p>
+<p>Может есть или будут в дальнейшем разработаны какие-нибудь решения для просмотра без JavaScript.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://baludok.com/wordpress/yandeks-predupredil-o-javascript/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

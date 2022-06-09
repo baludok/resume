@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>imagemagick &#8212; Киевское направление</title>
+	<atom:link href="https://baludok.com/wordpress/tag/imagemagick/feed" rel="self" type="application/rss+xml" />
+	<link>https://baludok.com/wordpress</link>
+	<description>Сайт о путешествиях и разных вылазках.</description>
+	<lastBuildDate>Tue, 25 Jan 2022 13:08:00 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>ImageMagick &#8212; обработка фотографий через консоль</title>
+		<link>https://baludok.com/wordpress/imagemagick-obrabotka-fotografij-cherez-konsol</link>
+					<comments>https://baludok.com/wordpress/imagemagick-obrabotka-fotografij-cherez-konsol#respond</comments>
+		
+		<dc:creator><![CDATA[rpne]]></dc:creator>
+		<pubDate>Tue, 25 Jan 2022 13:08:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[imagemagick]]></category>
+		<guid isPermaLink="false">https://baludok.com/wordpress/imagemagick-%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b0-%d1%84%d0%be%d1%82%d0%be%d0%b3%d1%80%d0%b0%d1%84%d0%b8%d0%b9-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-%d0%ba%d0%be%d0%bd%d1%81%d0%be%d0%bb</guid>
+
+					<description><![CDATA[Для публикации фотографий на сайте &#8212; мне нужно сначала изменить расширение, убрать &#171;туман&#187;, очистить служебные данные и указать копирайт. Как бы ничего сложного, в том же GIMP все эти операции сделать без проблем, но если фотографий много, то уйдет уйма времени. Через консоль в Linux с помощью ImageMagick данная операция выполняется за считаные секунды с… <span class="read-more"><a href="https://baludok.com/wordpress/imagemagick-obrabotka-fotografij-cherez-konsol">Читать далее &#187;</a></span>]]></description>
+										<content:encoded><![CDATA[<p>Для публикации фотографий на сайте &#8212; мне нужно сначала изменить расширение, убрать &#171;туман&#187;, очистить служебные данные и указать копирайт. Как бы ничего сложного, в том же GIMP все эти операции сделать без проблем, но если фотографий много, то уйдет уйма времени. Через консоль в Linux с помощью ImageMagick данная операция выполняется за считаные секунды с любым количеством фотографий.</p>
+<p>Переходим в папку с фотографиями<br />
+cd dir<br />
+Создаем папку site и создаем в ней все фотографии с расширением 1024 в формате .jpg<br />
+-quality 90 &#8212; уровень качества изображения<br />
+-auto-level &#8212; normalize &#8212; убираем &#171;туман&#187;<br />
+-strip &#8212; очищаем фото от exif и прочей служебной информации<br />
+-gravity SouthEast &#8212; расположение текста снизу справа<br />
+-pointsize 50 &#8212; размер текста<br />
+-weight thin &#8212; толщина шрифта<br />
+-fill white &#8212; цвет шрифта<br />
+-annotate 0 &#8216;konnov.name&#8217; &#8212; сам текст<br />
+-resize 1024&#215;1024 &#8212; тут думаю всё понятно</p>
+<p><code>mkdir site; for f in *.JPG ; do convert -quality 90 -auto-level -normalize -strip -gravity SouthEast -pointsize 40 -weight thin -fill white -annotate 0 'konnov.name' -resize 1024x1024 "$f" "site/${f%.jpg}-1024.jpg" ; done</code></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://baludok.com/wordpress/imagemagick-obrabotka-fotografij-cherez-konsol/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
